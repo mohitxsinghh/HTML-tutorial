@@ -1,0 +1,103 @@
+<!-- Link tag <a>....</a> -->
+<!-- The <a> tag defines a hyperlink, which is used to link from one page to another. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Link</title>
+    <style type="text/css">
+        a :link{color: green;}
+        a :visited{color: red;}
+        a :hover{color: blueviolet;}
+        a :active{color: brown;}
+    </style>
+</head>
+<body>
+    <p>Click on the following link.</p>
+<!-- href = specify the URL of the page the link goes to. (value : URL) -->
+    <a href="www.google.com">Google</a>
+</body>
+</html>
+
+
+
+<br> <br>
+<hr> <!-- <hr> attribute is used to give a horizontal line in the web. -->
+<br>
+
+
+<!-- Target attribute = Specifies where to open the linked document. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target attribute in HTML</title>
+    <style>
+        a :link{color: black; text-decoration: none;}
+        a :visited{color: brown; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+        a :active{color: blueviolet; font-weight: bold;}
+        a :hover{color: green; text-transform: uppercase;}
+    </style>
+</head>
+<body>
+    <h3>Various options available in the target attribute.</h3>
+
+    <p>"_blank" attribute used to open the link in a new browser window or tab.</p>
+    <a href="1_Basic.html" target="_blank">Basic HTML</a>
+
+    <p>"_self" attribute used to open the link in the same window or tab.</p>
+    <a href="1_Basic.html" target="_self">Basic HTML</a>
+
+    <p>"_top" attribute used to open the link in the full body of the window.</p>
+    <a href="1_Basic.html" target="_top">Basic HTML</a>
+
+    <p>"_parent" attribute is used to open the link in parent frame.</p>
+    <a href="1_Basic.html" target="_parent">Basic HTML</a>
+</body>
+</html>
+
+<!-- In this program we learn colors for links 
+1. link (standard link) = This specifies a link that has not been visited yet. (default) color - blue 
+2. visited (visited link) = Specifies the link that the visitor has visited. color - purple
+3. active (active link) = Specifies a link that is clicked. color - red 
+4. hover = Link that appear when the user moves the mouse over it. -->
+
+<br><br>
+<hr>
+<br>
+
+<!-- Link of an image, email, phone no., other section on a same page & javascript -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating links</title>
+    <style>
+        a :link, a :visited {
+            text-decoration: underline;
+            cursor: auto;
+        }
+    </style>
+</head>
+<body>
+    <p>Image as a link</p>
+    <a href="Mohit.jpg"> <img src="Mohit.jpg" width="100" alt="Mohit"></a>
+
+    <p>link to a email address</p>
+    <a href="mailto:mohitkrsingh2603@gmail.com">Send email</a>
+
+    <p>link to a phone number</p>
+    <a href="tel:9523102808">Call now</a>
+
+    <p>link to another section on the same page</p>
+    <a href="#section2">Go to section 2</a>
+
+    <p>Link to a javascript</p>
+    <a href="javascript:alert ('Hello World!');">Executive javascript</a>
+</body>
+</html>
+

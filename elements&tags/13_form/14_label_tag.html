@@ -1,0 +1,43 @@
+<!-- The <label> element represents a caption for a form element in a user interface. It improves accessibility by linking text to form elements.
+It works hand-in-hand with input elements. It allows users to click on the label which then selects or focuses on the associated input field, such as text field, checkboxes or radio buttons. 
+This connection between inputs and labels enhances both usability and accessibility for forms, making it easier to interact with them. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating form</title>
+</head>
+<body>
+    <H1>HTML label tag</H1>
+    <p style="font-weight: bold;">Select Gender</p>
+    <form action="form.html">
+        <label>Male
+            <input type="radio"
+                   name="gender"
+                   id="male"
+                   value="male">
+        </label>
+        <br>
+
+        <label>Female
+            <input type="radio"
+                   name="gender"
+                   id="female"
+                   value="female">
+        </label>
+        <br>
+
+        <label>Other
+            <input type="radio"
+                   name="gender"
+                   id="other"
+                   value="other">
+        </label>
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

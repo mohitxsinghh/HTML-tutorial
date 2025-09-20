@@ -1,0 +1,69 @@
+<!-- An Description list is not as commonly used as ordered or unordered lists but serves as important purpose for displaying name-value pairs. This type of list is marked up using three tags: <dl>, <dt> and <dd>.  
+
+<dl> (Description list) - This tag defines the description list itself and acts as a container for the list item.
+
+<dt> (Description term) - Represents a term or a name within the list.
+
+<dd> (Description details) - Provides the description or definition of the term. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description Lists</title>
+</head>
+<body>
+    <h2>Description List</h2>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+
+        <dt>Javascript</dt>
+        <dd>Scripting language for web pages</dd>
+    </dl>
+</body>
+</html>
+
+<!-- Nested Description List -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Description list</title>
+</head>
+<body>
+    <h3>Technology Overview</h3>
+
+    <dl>
+        <dt>Hardware</dt>
+        <dd>Physical Devices</dd>
+        <dd>
+            <dl>
+                <dt>CPUs</dt>
+                <dd>Processors</dd>
+
+                <dt>GPUs</dt>
+                <dd>Graphics</dd>
+            </dl>
+        </dd>
+        <dt>Software</dt>
+        <dd>Programs/Apps</dd>
+        <dd>
+            <dl>
+                <dt>System</dt>
+                <dd>OS</dd>
+
+                <dt>Applications</dt>
+                <dd>Tools</dd>
+            </dl>
+        </dd>
+    </dl>
+</body>
+</html>

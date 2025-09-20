@@ -1,0 +1,36 @@
+<!-- The <iframe> tag is used to define inline frame that enables you to present another HTML document within the same window.
+Frames allowus to open more than one web page simultaneously in a browser window. Frames divide the screen into rectangular areas, each of which can contain an HTML document. -->
+
+<!-- Properties of <iframe> tag 
+# src = URL of the web page to be displayed in the frame. 
+# width & height = Specifies the width and height of the inline frame. 
+# seamless = This attribute will show an inline frame as a part of the consisting element.
+# name = Specifies the name of an iframe. 
+# loading = Specifies whether a browser should load an iframe immediately or to defer loading of iframes until some conditions are met.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Frame</title>
+    <style>iframe{margin-left: 100px;}</style>
+</head>
+<body style="text-align: center;">
+    <h2>Creating HTML Iframe tag</h2>
+
+    <iframe src="fr1.html" 
+            frameborder="0"
+            height="1000"
+            width="800"
+            style="border: 4px orange;"
+            name="iframe_a">
+    </iframe>
+
+    <p><a href="fr2.html"
+        target="iframe_a">
+        Change the picture
+        </a>
+    </p>
+</body>
+</html>

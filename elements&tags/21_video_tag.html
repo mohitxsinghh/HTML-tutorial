@@ -1,0 +1,56 @@
+<!-- The video element is used to show video content on web pages. It supports various video formats including, MP4, WebM and Ogg. -->
+
+<!-- Attributes of video tag.
+# controls - Adds playback controls such as play, pause, volume, etc.
+# width & height - Specifies the width and height of the video player.
+# autoplay - Automatically starts playing the video when its loaded.
+# muted - Muted the video by default.
+# src - Specifies the video file's path.
+# type - Defines the format of the video (eg. video/mp4, video/webm). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video tag</title>
+    <style>
+        video{
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <video controls poster="https://poster.png?">
+        <source src="hhtp://video_sample.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
+
+<!-- poster attribute - The poster attribute display a placeholder image before the video loads or play, enhancing the user experience. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+        video{
+            width: 640px;
+            height: 360px;
+            border: 2px solid green;
+            border-radius: 8px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay controls loop muted height="240" width="320">
+        <source src="http://video.file.mp4" type="video/mp4"> Sample video
+    </video>
+</body>
+</html>

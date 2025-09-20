@@ -1,0 +1,41 @@
+<!-- Attributes of <img> tag -->
+<!-- # src = Specifies the path to the image file.
+# alt = Provides alternate text for the image, useful for accessibility and when the image cannot be displayed.
+# loading = Specifies whether the browser should defer image loading or load it immediately.
+# sizes = Specifies image sizes for different page layout. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting Image</title>
+    <style>
+        img{display: inline-block;}
+    </style>
+</head>
+<body>
+    <h2>Align Image</h2>
+    <img src="/HTML Tutorial/Mohit.jpg" alt="Mohit" width="100" style="vertical-align: bottom;">
+    <img src="/HTML Tutorial/Mohit.jpg" alt="Mohit" width="100" style="float: right;">
+
+    <h2>Image border</h2>
+    <img src="/HTML Tutorial/Mohit.jpg" alt="Mohit" width="100" style="border: 10px black;">
+
+    <h2>Left and right margin to image</h2>
+    <img src="/HTML Tutorial/Mohit.jpg" alt="Mohit" width="100" style="vertical-align: middle; margin: 0px 50px;">
+
+    <h2>Top and bottom margin</h2>
+    <img src="/HTML Tutorial/Mohit.jpg" alt="Mohit" width="100" style="vertical-align: middle; margin: 50px 0px;">
+
+    <h2>Insert image from another folder or from another website</h2>
+    <img src="/Insert img/Mohit.jpg">
+    <img src="http://127.0.0.1:5500/HTML%20Tutorial/Mohit.jpg" alt="Google">
+
+    <h2>Add a hyperlink to an image</h2>
+    <a href="https://www.w3schools.com"><img src="w3html.gif" alt="w3schools.com"></a>
+
+    <h2>Add a title</h2>
+    <img src="/HTML Tutorial/Mohit.jpg" title="Mohit pic">
+</body>
+</html>

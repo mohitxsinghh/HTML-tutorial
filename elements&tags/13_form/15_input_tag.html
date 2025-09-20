@@ -1,0 +1,112 @@
+<!-- The <input> tag is used to collect user input in web forms. It supports various input types such as texts, passwords, checkboxes, radiobutton and more.
+An input field can be of various types depending upon the attribute type. The input tag is an empty element that only contain attributes. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input tag</title>
+</head>
+<body>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+
+        <label for="password">Password:</label>
+        <input type="password">
+    </form>
+</body>
+</html>
+
+<br><br><hr><br><br>
+
+
+<!-- Here 
+> The <label> element with the for attribute associates the label "Username:" with the input field, enhancing accessibilities.
+> The <input> element of type "text" creates a single-line text input field where user can enter their username. -->
+
+<!-- Attributes of <input> tag.
+# type = It specifies the type of input element. It default value is text.
+# value = It specifies the value of input element.
+# name = It specifies the name of input element.
+# multiple = It specifies that a user can enter more than one value in an <input> element.
+# size = It specifies the width in character of an <input> element.
+# src = It specifies the URL of an image to use as a submit button. -->
+
+<!-- Common <input> types --
+> <input type="text"> = Single line text input. 
+> <input type="password"> = Masked text input for password. 
+> <input type="checkbox"> = Toggle of selecting multiples options.
+> <input type="radio"> = Single selection for multiple options.
+> <input type="submit"> = Button for submit.
+> <input type="button"> = General-purpose button. 
+> <input type="file"> = Input for uploading file.
+> <input type="date"> = Input for selecting date.
+> <input type="email"> = Input for email address. 
+> <input type="range"> = Slider for selecting a numeric value within a range.
+> <input type="hidden"> = Hidden input 
+> <input type="image"> = Input using an image for form submission. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating form</title>
+</head>
+<body>
+    <h1>Creating form</h1>
+    <h2>The input element</h2>
+
+    <form action="form.html">
+
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname">
+        <br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <input type="submit" value="submit">
+    </form>
+
+    <p>Click the submit button and the form data will be sent to a page on the server called "form.html"</p>
+</body>
+</html>
+
+<br><br><hr><br><br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating email form</title>
+    <style>
+        input[type="password"]{
+            border: 2px black;
+            border-radius: 4px;
+            padding: 10px;
+            width: 200px;
+        } 
+        input[type="email"]{
+            border: 1px red;
+            padding: 8px;
+            font-size: 14px;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <form action="form.html">
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="example@example.com">
+
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password">
+    </form>
+</body>
+</html>

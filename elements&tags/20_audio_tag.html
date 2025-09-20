@@ -1,0 +1,30 @@
+<!-- The audio element is used to add audio content to a webpage, allowing you to play music, sound effects or other audio files directly in the browser. -->
+
+<!-- Attributes of audio tag 
+# controls - controls attribute adds play, pause, and volume controls to the audio player. 
+# autoplay - autoplay attribute makes the audio play automatically when the page loads. 
+# loop - loop attribute makes the audio play continuously, repeating the file. 
+# src - src attribute defines the URL of the audio file. 
+# muted - muted attribute silences the audio when the page loads. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+    <style>
+        audio{
+            display: block;
+            margin: 20px auto;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <audio controls autoplay>
+        <source src = "sample.mp3"
+        type = "audio/mpeg">
+    </audio>
+</body>
+</html>

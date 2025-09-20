@@ -1,0 +1,53 @@
+<!-- The <b> tag (bold) specifies bold text, without any extra importance. -->
+
+<!-- The <em> tag (emphasized text) is used to define emphasized text. The content inside is typically displayed is italic. -->
+
+<!-- The <i> tag (italic) defines a part of text in an alternate voice or mode. The content inside is typically displayed is italic. -->
+
+<!-- The <u> tag (underline) is traditionally used to underline text. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style tags</title>
+</head>
+<body>
+    <h2>Bold tag</h2>
+    <p>This is normal text. <b>and this is bold text</b>.</p>
+
+    <p>Using span for bold text</p>
+    <p>This is simple text <span style="font-weight: bold;">and this is bold text</span>.</p>
+
+    <h2>Emphasized text</h2>
+    <p>You <em>have</em> to hurry up!</p>
+
+    <h2>Italic tag</h2>
+    <p>This is simple text. <i>and this is italic text</i>.</p>
+
+    <h2>Underline tag</h2>
+    <p>This is simple text. <u>and this is underlined text</u>.</p>
+</body>
+</html>
+
+<!-- Use of underline tag -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underline tag</title>
+    <style>
+        .spelling-error{
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>This is some <u class="spelling-error">mispeled</u> text.</p>
+</body>
+</html>

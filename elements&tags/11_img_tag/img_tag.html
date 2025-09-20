@@ -1,0 +1,53 @@
+<!-- <img> tag is used to insert an image in a HTML document. It is an empty element as it does not have an OFF tag. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting Image</title>
+    <style>
+        img{
+            border: 4px orange;
+            width: 120px;
+            height: 100px;
+        }
+        h2{text-transform: uppercase;}
+    </style>
+</head>
+<body>
+    <h2>Inserting Image</h2>
+
+    <img src="Mohit.jpg">
+    <br>
+    <img src="Moht.jpg" alt="Image not available">
+    <br>
+    <img src="Mohit.jpg" loading="lazy">
+    <br>
+</body>
+</html>
+
+<!-- Attributes of <img> tag -->
+<!-- # src = Specifies the path to the image file.
+# alt = Provides alternate text for the image, useful for accessibility and when the image cannot be displayed.
+# loading = Specifies whether the browser should defer image loading or load it immediately.
+# sizes = Specifies image sizes for different page layout. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting Image</title>
+    <style>
+        img{display: inline-block;}
+    </style>
+</head>
+<body>
+    <h2>Align Image</h2>
+
+    <img src="Mohit.jpg" alt="Mohit" width="300" style="vertical-align: bottom;">
+</body>
+</html>
+
+
